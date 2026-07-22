@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Button, PageContainer, Paragrafo, Title } from "./componets/Styles";
+import { Button, PageContainer, Paragrafo, Title , Input , Login } from "./componets/Styles";
 import { GlobalStyles } from "./GlobalStyles";
 
 interface User {
@@ -21,9 +21,15 @@ function App() {
   return (
     <PageContainer>
       <GlobalStyles/>
-      <Title>Gian</Title>
-      <Button onClick={HandleClicks}>Cliques</Button>
-      <Paragrafo>{`Houve ${cliques} cliques`}</Paragrafo>
+      <Title>Log in</Title>
+
+    <Login>
+      <Input></Input>
+      <Input></Input>
+    </Login>
+
+      <Button onClick={HandleClicks}>Login</Button>
+      <Paragrafo>{`Houve ${cliques} Logins`}</Paragrafo>
     </PageContainer>
   );
 }

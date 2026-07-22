@@ -1,9 +1,9 @@
 import styled from "styled-components";
 
 export const Button = styled.button`
-  background-color: #1e1e1e;
-  padding: 8px 12px;
-  border-radius: 4px;
+  background-color: #ec2929;
+  padding: 10px 150px;
+  border-radius: 10px;
   color: white;
   border: none;
   cursor: pointer;
@@ -38,3 +38,18 @@ export const PageContainer = styled.div`
 
 `
 
+export const Input = styled.input`
+
+  border-radius: 10px;
+  padding: 10px 86px;
+  margin-top: 16px;
+  border-color: #ec2929;
+
+`
+
+
+export const Login = styled.div`
+
+  display: grid;
+
+`
