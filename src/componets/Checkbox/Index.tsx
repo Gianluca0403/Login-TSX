@@ -16,5 +16,14 @@ export const Chekbox = styled.label`
   cursor: pointer;
   width: 340px;
   justify-content: flex-start; // alinha o cheack box e o texto a esquerda
-  margin-top: 10px;
+  margin-top: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  white-space: nowrap; // impede que a linha quebre
+`;
+
+export const Pforgot = styled.p`
+
+  color: #850000;
+  padding-left: 116px;
+
 `;

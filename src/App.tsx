@@ -5,6 +5,7 @@ import { Input } from "./componets/Inputs/Index";
 import { Button } from "./componets/Button/Index";
 import { RememberButton } from "./componets/Checkbox/Index";
 import { Chekbox } from "./componets/Checkbox/Index";
+import { Pforgot } from "./componets/Checkbox/Index";
 
 interface User {
   name: string;
@@ -35,8 +36,13 @@ function App() {
       <Chekbox>
         <RememberButton />
         Remenber Me
-      </Chekbox>
 
+        <Pforgot>
+            Forgot Password
+        </Pforgot>
+
+      </Chekbox>
+  
       <Button onClick={HandleClicks}>Login</Button>
       <Paragrafo>{`Houve ${cliques} Logins`}</Paragrafo>
     </PageContainer>
