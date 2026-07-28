@@ -1,6 +1,8 @@
 import { useState } from "react";
-import { Button, PageContainer, Paragrafo, Title , Input , Login } from "./componets/Styles";
+import { PageContainer, Paragrafo, Title , Login } from "./componets/Styles";
 import { GlobalStyles } from "./GlobalStyles";
+import {Input} from "./componets/Inputs/Index";
+import { Button } from "./componets/Button/Index";
 
 interface User {
   name: string;
