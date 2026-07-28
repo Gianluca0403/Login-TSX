@@ -1,8 +1,10 @@
 import { useState } from "react";
-import { PageContainer, Paragrafo, Title , Login } from "./componets/Styles";
+import { PageContainer, Paragrafo, Title, Login } from "./Styles";
 import { GlobalStyles } from "./GlobalStyles";
-import {Input} from "./componets/Inputs/Index";
+import { Input } from "./componets/Inputs/Index";
 import { Button } from "./componets/Button/Index";
+import { RememberButton } from "./componets/Checkbox/Index";
+import { Chekbox } from "./componets/Checkbox/Index";
 
 interface User {
   name: string;
@@ -22,13 +24,18 @@ function App() {
 
   return (
     <PageContainer>
-      <GlobalStyles/>
+      <GlobalStyles />
       <Title>Log in</Title>
 
-    <Login>
-      <Input></Input>
-      <Input></Input>
-    </Login>
+      <Login>
+        <Input placeholder="Usuario"></Input>
+        <Input placeholder="Senha"></Input>
+      </Login>
+
+      <Chekbox>
+        <RememberButton />
+        OI
+      </Chekbox>
 
       <Button onClick={HandleClicks}>Login</Button>
       <Paragrafo>{`Houve ${cliques} Logins`}</Paragrafo>
