@@ -34,7 +34,7 @@ function App() {
 
       <Chekbox>
         <RememberButton />
-        OI
+        Remenber Me
       </Chekbox>
 
       <Button onClick={HandleClicks}>Login</Button>
